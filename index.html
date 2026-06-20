@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mohammed Shajith Khan — Data Analyst</title>
+<meta name="description" content="Portfolio of Mohammed Shajith Khan — Aspiring Data Analyst. Python, SQL, Power BI, Excel. Supply chain & business analytics projects." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="circular-text-additions.css">
+<link rel="stylesheet" href="logoloop.css">
+<link rel="stylesheet" href="resume-modal.css">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/framer-motion@11/dist/framer-motion.js"></script>
+<script>const FramerMotion = window.Motion || window.FramerMotion;</script>
+</head>
+<body>
+<div id="click-spark-root"></div>
+<!-- noise/grid overlay -->
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- NAV -->
+<!-- FLOATING DOCK NAV -->
+<nav class="floating-dock" id="floating-dock" role="navigation" aria-label="Main navigation">
+  <div class="dock-items" id="dock-items">
+
+    <a href="#top" class="dock-item" data-label="Home">
+      <div class="dock-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+      </div>
+      <span class="dock-label">Home</span>
+    </a>
+
+    <a href="#about" class="dock-item" data-label="About">
+      <div class="dock-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </div>
+      <span class="dock-label">About</span>
+    </a>
+
+    <a href="#skills" class="dock-item" data-label="Skills">
+      <div class="dock-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <span class="dock-label">Skills</span>
+    </a>
+
+    <a href="#projects" class="dock-item" data-label="Projects">
+      <div class="dock-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      </div>
+      <span class="dock-label">Projects</span>
+    </a>
+
+    <a href="#contact" class="dock-item" data-label="Contact">
+      <div class="dock-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <span class="dock-label">Contact</span>
+    </a>
+
+    <div class="dock-separator"></div>
+
+    <a href="https://github.com/shajithkhan-dev" target="_blank" rel="noopener" class="dock-item" data-label="GitHub">
+      <div class="dock-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      </div>
+      <span class="dock-label">GitHub</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/mohammed-shajith-khan-196918292" target="_blank" rel="noopener" class="dock-item" data-label="LinkedIn">
+      <div class="dock-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </div>
+      <span class="dock-label">LinkedIn</span>
+    </a>
+
+    <button class="dock-item" id="resume-trigger" data-label="Resume" aria-haspopup="dialog">
+      <div class="dock-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M8 13h8M8 17h8M8 9h2"/></svg>
+      </div>
+      <span class="dock-label">Resume</span>
+    </button>
+
+    <div class="dock-separator"></div>
+
+    <button class="dock-item" id="theme-toggle" aria-label="Toggle theme" data-label="Theme">
+      <div class="dock-icon">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+      </div>
+      <span class="dock-label">Theme</span>
+    </button>
+
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-rays" id="hero-rays" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">
+        <span class="status-dot"></span>
+        Open to Data Analyst roles · Chennai, IN
+      </p>
+
+      <h1 class="hero-title reveal">
+        Mohammed<br>
+        Shajith&nbsp;Khan
+      </h1>
+
+      <p class="hero-role reveal">
+        <span class="mono">Turning</span> raw <span class="mono">data</span> into
+        <span class="mono">real</span> insights.
+      </p>
+
+      <p class="hero-lede reveal">
+        Aspiring Data Analyst turning messy spreadsheets and disconnected tables into
+        dashboards people actually trust. SQL, Python and Power BI — applied to real
+        supply‑chain and business problems.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">
+          View projects
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button type="button" class="btn btn-outline" id="resume-trigger-hero" aria-haspopup="dialog">
+          View resume
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </button>
+        <a href="https://github.com/shajithkhan-dev" target="_blank" rel="noopener" class="btn btn-outline">
+          GitHub
+        </a>
+        <a href="mailto:shajithkhanprof@gmail.com" class="btn btn-outline">
+          Email me
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num mono">03</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num mono">SQL/PY/BI</span>
+          <span class="stat-label">Core Stack</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num mono">BCA</span>
+          <span class="stat-label">Computer Applications</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="circular-text-root"></div>
+
+    <div class="scroll-cue reveal" aria-hidden="true">
+      <span class="mono">scroll</span>
+      <div class="scroll-cue-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="section-head">
+        <p class="section-tag mono reveal">About</p>
+        <h2 class="section-title reveal">From spreadsheets<br>to decisions.</h2>
+      </div>
+
+      <div class="about-body reveal">
+        <p>
+          I'm a BCA graduate based in Chennai and I do
+          data‑driven decision support. I like the part most people skip — sitting with
+          messy, unstructured data until it tells a straight story.
+        </p>
+        <p>
+          My day‑to‑day toolkit is <strong>Python</strong> for analysis, <strong>SQL</strong>
+          for getting at the data that matters, and <strong>Power BI</strong> for putting
+          it in front of someone who needs to make a decision with it. I think in
+          <strong> star schemas</strong> — fact tables, dimensions, and KPIs that map
+          straight back to a real business question.
+        </p>
+        <p>
+          Right now: building out my analytics depth — advanced SQL, deeper data modeling
+          in Power BI, and automating the boring parts of analysis with Python — while
+          looking for a first full‑time seat as a Data Analyst.
+        </p>
+
+        <div class="about-panel">
+          <div class="panel-corner panel-corner-tl"></div>
+          <div class="panel-corner panel-corner-br"></div>
+          <div class="about-row">
+            <span class="about-key mono">Location</span>
+            <span class="about-val">Chennai, Tamil&nbsp;Nadu, India</span>
+          </div>
+          <div class="about-row">
+            <span class="about-key mono">Education</span>
+            <span class="about-val">BCA — Bachelor of Computer Applications</span>
+          </div>
+          <div class="about-row">
+            <span class="about-key mono">Status</span>
+            <span class="about-val"><span class="status-dot"></span> Open to opportunities</span>
+          </div>
+          <div class="about-row">
+            <span class="about-key mono">Looking&nbsp;for</span>
+            <span class="about-val">Data Analyst / BI Analyst roles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="section-tag mono reveal">Skills</p>
+        <h2 class="section-title reveal">The stack behind<br>every dashboard.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal" style="grid-column: 1 / -1;">
+          <h3 class="skill-group-title mono">Languages &amp; Tools</h3>
+          <div class="skills-loop-wrap" id="logoloop-root"></div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title mono">Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Star Schema Modeling</span>
+            <span class="skill-tag">KPI Design</span>
+            <span class="skill-tag">EDA</span>
+            <span class="skill-tag">Forecasting</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title mono">Currently Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-learning">Advanced SQL</span>
+            <span class="skill-tag skill-tag-learning">Power BI Data Modeling</span>
+            <span class="skill-tag skill-tag-learning">Analytics Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="section-tag mono reveal">Projects</p>
+        <h2 class="section-title reveal">Real data,<br>real questions.</h2>
+      </div>
+
+      <div class="project-list">
+
+        <article class="project-card reveal">
+          <div class="panel-corner panel-corner-tl"></div>
+          <div class="panel-corner panel-corner-br"></div>
+          <div class="project-visual">
+            <svg viewBox="0 0 280 140" class="project-chart" preserveAspectRatio="none">
+              <polyline points="0,110 35,90 70,95 105,60 140,70 175,35 210,45 245,20 280,28" class="chart-line chart-line-a"/>
+              <polyline points="0,125 35,120 70,108 105,112 140,95 175,98 210,80 245,84 280,70" class="chart-line chart-line-b"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-index mono">01</p>
+            <h3 class="project-title">Sales &amp; Retail Data Analysis</h3>
+            <p class="project-desc">
+              Exploratory analysis of retail sales performance — profit trends, top
+              product categories and seasonal demand patterns, with revenue drivers
+              surfaced through structured EDA.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill mono">Python</span>
+              <span class="tag-pill mono">Pandas</span>
+              <span class="tag-pill mono">Matplotlib</span>
+              <span class="tag-pill mono">EDA</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shajithkhan-dev/sales-retail-analysis" target="_blank" rel="noopener" class="project-link">
+                View source
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="panel-corner panel-corner-tl"></div>
+          <div class="panel-corner panel-corner-br"></div>
+          <div class="project-visual">
+            <svg viewBox="0 0 280 140" class="project-chart" preserveAspectRatio="none">
+              <rect x="10" y="70" width="22" height="55" class="chart-bar chart-bar-a"/>
+              <rect x="45" y="45" width="22" height="80" class="chart-bar chart-bar-b"/>
+              <rect x="80" y="85" width="22" height="40" class="chart-bar chart-bar-a"/>
+              <rect x="115" y="30" width="22" height="95" class="chart-bar chart-bar-b"/>
+              <rect x="150" y="60" width="22" height="65" class="chart-bar chart-bar-a"/>
+              <rect x="185" y="20" width="22" height="105" class="chart-bar chart-bar-b"/>
+              <rect x="220" y="50" width="22" height="75" class="chart-bar chart-bar-a"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-index mono">02</p>
+            <h3 class="project-title">Employee Salary Dashboard</h3>
+            <p class="project-desc">
+              Interactive Power BI dashboard analyzing salary against experience —
+              a KPI‑driven data model built to evaluate workforce compensation
+              trends, with the source data shaped and cleaned in Excel.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill mono">Power BI</span>
+              <span class="tag-pill mono">DAX</span>
+              <span class="tag-pill mono">Excel</span>
+              <span class="tag-pill mono">Data Modeling</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shajithkhan-dev/employee-salary-dashboard" target="_blank" rel="noopener" class="project-link">
+                View source
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="panel-corner panel-corner-tl"></div>
+          <div class="panel-corner panel-corner-br"></div>
+          <div class="project-visual">
+            <svg viewBox="0 0 280 140" class="project-chart" preserveAspectRatio="none">
+              <polyline points="0,100 40,95 80,100 120,80 160,82 200,55 240,58 280,30" class="chart-line chart-line-a chart-dashed"/>
+              <circle cx="40" cy="95" r="3.5" class="chart-dot"/>
+              <circle cx="120" cy="80" r="3.5" class="chart-dot"/>
+              <circle cx="200" cy="55" r="3.5" class="chart-dot"/>
+              <circle cx="280" cy="30" r="3.5" class="chart-dot"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="project-index mono">03</p>
+            <h3 class="project-title">E‑commerce Demand Forecasting</h3>
+            <p class="project-desc">
+              Analysis of order trends and product demand patterns for an
+              e‑commerce dataset, using Python to model demand and visualize
+              performance metrics through a working dashboard.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill mono">Python</span>
+              <span class="tag-pill mono">Forecasting</span>
+              <span class="tag-pill mono">Dashboards</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shajithkhan-dev?tab=repositories" target="_blank" rel="noopener" class="project-link">
+                View source
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section-inner contact-inner">
+      <p class="section-tag mono reveal">Contact</p>
+      <h2 class="contact-title reveal">
+        Let's turn your data<br>into a decision.
+      </h2>
+      <p class="contact-lede reveal">
+        Open to Data Analyst and BI Analyst roles, internships, and freelance
+        dashboard work. I usually reply within a day.
+      </p>
+
+      <div class="contact-actions reveal">
+        <a href="mailto:shajithkhanprof@gmail.com" class="btn btn-primary btn-lg">
+          shajithkhanprof@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-links reveal">
+        <a href="https://github.com/shajithkhan-dev" target="_blank" rel="noopener" class="contact-link">
+          <span class="mono">👾</span> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/mohammed-shajith-khan-196918292" target="_blank" rel="noopener" class="contact-link">
+          <span class="mono">🔗</span> LinkedIn
+        </a>
+        <a href="mailto:shajithkhanprof@gmail.com" class="contact-link">
+          <span class="mono">✉</span> Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-quote">"Without data, you're just another person with an opinion."</p>
+    <p class="footer-meta mono">© 2026 Mohammed Shajith Khan · Built from Chennai, IN</p>
+  </div>
+</footer>
+
+<!-- RESUME MODAL -->
+<div class="resume-modal" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title" hidden>
+  <div class="resume-modal-backdrop" data-resume-close></div>
+  <div class="resume-modal-panel">
+    <div class="resume-modal-head">
+      <div>
+        <p class="resume-modal-tag mono">Resume</p>
+        <h3 class="resume-modal-title" id="resume-modal-title">Mohammed Shajith Khan</h3>
+      </div>
+      <div class="resume-modal-actions">
+        <a href="assets/Mohammed_Shajith_Khan_Resume.pdf" download class="btn btn-primary btn-sm">
+          Download
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        </a>
+        <button type="button" class="resume-modal-close" data-resume-close aria-label="Close resume preview">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="resume-modal-body">
+      <iframe src="assets/Mohammed_Shajith_Khan_Resume.pdf" title="Mohammed Shajith Khan — Resume preview" loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="main.js"></script>
+<script src="CircularText.js"></script>
+<script src="LogoLoop.js"></script>
+<script src="click-spark.js"></script>
+<script src="react-mount.js"></script>
+</body>
+</html>
